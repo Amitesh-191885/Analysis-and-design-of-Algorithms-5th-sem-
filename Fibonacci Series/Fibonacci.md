@@ -3,6 +3,4 @@
 #
 <b>Graphs pictures:</b> 
 #
-<p align="center">
-  <img width="460" height="300" src="">
-</p>
+![Time vs  N ](https://user-images.githubusercontent.com/79594157/132905930-3b9de136-f9d3-421a-ab9e-e6cdd5e864d3.png)
