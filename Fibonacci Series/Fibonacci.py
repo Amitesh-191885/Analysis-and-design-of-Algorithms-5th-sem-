@@ -1,5 +1,7 @@
+import time
 
 num = int(input()) #Take input
+starttime = time.time()
 term1 = 0
 term2 = 1
 if(num<=0):
@@ -16,4 +18,6 @@ else:
         #Update the value for print next value
         term1 = term2; 
         term2 = term3;
-    
+
+print(end='\n')
+print(time.time()-starttime)
