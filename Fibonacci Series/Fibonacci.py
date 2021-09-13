@@ -1,5 +1,5 @@
 import time
-
+#Program for fibonacci series
 num = int(input()) #Take input
 starttime = time.time()
 term1 = 0
@@ -20,4 +20,4 @@ else:
         term2 = term3;
 
 print(end='\n')
-print(time.time()-starttime)
+print((time.time()-starttime))
