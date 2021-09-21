@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-  int N=9,temp;
+  int N=9;
   int arr[N] = {2,3,6,8,4,1,5,7,0};
 
   //Bubble sort Begin
@@ -14,10 +14,12 @@ int main(){
        last element and swap the values. */
 
       if(arr[j]>arr[j+1]){ 
-        /* Swap the value so that arr is in sorted manner */
-        temp = arr[j];
-        arr[j] = arr[j+1];
-        arr[j+1] = temp;
+        /* Swap the value so that arr is in sorted manner 
+        Using ExOR operation, without using extra variable.
+        */
+        arr[j] = arr[j]^arr[j+1];
+        arr[j+1] = arr[j]^arr[j+1];
+        arr[j] = arr[j]^arr[j+1];
       }
     }
   }
