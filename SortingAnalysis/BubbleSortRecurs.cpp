@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<time.h>
 using namespace std;
 
 void BubbleSort(int data[],int Size){
@@ -23,7 +24,11 @@ int main(){
   int DatasetArr[] = {3,5,7,0,8,9,1,2};
   int size = sizeof(DatasetArr)/sizeof(DatasetArr[0]);
   
+  clock_t startTime = clock(); //For calculate time difference 
+  
   BubbleSort(DatasetArr,size); // Calling function of BubbleSort...
+
+  cout<<(double)(clock() - startTime)/CLOCKS_PER_SEC<<"\n\n";
   
   for(int i=0;i<size;i++){
     cout<<DatasetArr[i]<<" "; //Print the data value...
