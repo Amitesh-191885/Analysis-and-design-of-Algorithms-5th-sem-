@@ -12,7 +12,7 @@ int main(){
   
   clock_t startTime = clock(); //For calculate time difference 
 
-  MergeSort(DatasetArr,0,(Size-1)); //Calling MergeSort function for sort the array.
+  MergeSort(DatasetArr,0,(Size-1)); //Calling MergeSort function to sort the array.
   
   cout<<(double)(clock() - startTime)/CLOCKS_PER_SEC<<"\n\n";
 
@@ -25,14 +25,14 @@ int main(){
 
 //MergeSort Define...
 void MergeSort(int data[],int lower,int upper){
-  if(lower<upper){ //Base case means is thare any data element present in between the boundries or not.
+  if(lower<upper){ //Base case means is there any data element present in between the boundaries or not.
     
     int middleIndex = (lower+upper)/2; //For Divide the array in two parts.
     
     MergeSort(data,lower,middleIndex); //Sort the first part.
     MergeSort(data,middleIndex+1,upper); //Sort the second part.
 
-    Merge(data,lower,middleIndex,upper); //Merge the both in such way array become sorted.
+    Merge(data,lower,middleIndex,upper); //Merge the both in such a way the array becomes sorted.
   }
 }
 
@@ -57,8 +57,8 @@ void Merge(int dataset[],int startIndex,int middleIndex,int stopIndex){
   k = startIndex; // This index for sorted array.
 
   while (i<N1 && j<N2){ 
-    /*Compare the values and take that value which is smaller and assign at k'th index of sorted array.
-      And incriment the index values. 
+    /*Compare the values and take that value which is smaller and assign it at k'th index of sorted array.
+      And increment the index values. 
     */
     if(LeftArr[i]<RightArr[j]){
       dataset[k] = LeftArr[i];
