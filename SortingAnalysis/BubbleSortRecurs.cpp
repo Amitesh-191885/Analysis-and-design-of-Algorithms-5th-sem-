@@ -6,7 +6,7 @@ void BubbleSort(int data[],int Size){
   if(Size == 1){
     return;
   }
-  else
+  else{
     for(int index=0;index<Size-1;index++){
       if(data[index]>data[index + 1]){
         /* Here I'm swaping the value using bit manipulation using Ex-OR operation without using any extra space...
@@ -18,6 +18,7 @@ void BubbleSort(int data[],int Size){
     }
     
     BubbleSort(data,Size-1);
+  }
 }
 
 int main(){
