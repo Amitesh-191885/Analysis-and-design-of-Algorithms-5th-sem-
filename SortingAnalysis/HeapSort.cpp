@@ -6,17 +6,17 @@ using namespace std;
 // n is size of heap
 void heapify(int arr[], int n, int i){
     int largest = i; // Initialize largest as root
-    int l = 2*i + 1; // left = 2*i + 1
-    int r = 2*i + 2; // right = 2*i + 2
+    int leftch = 2*i + 1; // left = 2*i + 1
+    int rightch = 2*i + 2; // right = 2*i + 2
 
     // If left child is larger than root
-    if (l < n && arr[l] > arr[largest]){
-      largest = l;
+    if (leftch < n && arr[leftch] > arr[largest]){
+      largest = leftch;
     }
 
     // If right child is larger than largest so far
-    if (r < n && arr[r] > arr[largest]){
-      largest = r;
+    if (rightch < n && arr[rightch] > arr[largest]){
+      largest = rightch;
     }
 
     // If largest is not root
