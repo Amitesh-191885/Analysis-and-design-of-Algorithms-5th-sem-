@@ -2,9 +2,9 @@
 using namespace std;
 
 int BinarySearch(int arr[],int low,int high,int key){
-    int mid = (low+(high+1))/2;
     while (low<=high){
       /* code */
+      int mid = (low+(high+1))/2;
       if(arr[mid]==key){
         return mid;
       }
@@ -15,11 +15,8 @@ int BinarySearch(int arr[],int low,int high,int key){
         low = mid+1;
       }
     }
-
-    if(low>high){
-      return -1;
-    }
     
+  return -1;   
 }
 
 int main(){
