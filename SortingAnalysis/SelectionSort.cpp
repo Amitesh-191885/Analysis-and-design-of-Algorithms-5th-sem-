@@ -2,7 +2,6 @@
 #include<time.h>
 
 using namespace std;
-int smallestelemets(int arr[],int k,int SizE);
 void SelectionSort(int arr[],int size);
 
 int main(){
@@ -24,13 +23,13 @@ int main(){
 
 void SelectionSort(int arr[],int SizE){
   int pos,temp,k,small;
-  for(k=SizE-1;k>=0;k--){
-  //for(k=0;k<SizE;k++){
-    //pos = smallestelemets(arr,k,SizE);
+  //for(k=SizE-1;k>=0;k--){
+  for(k=0;k<SizE;k++){
+  
     small = arr[k];
     pos = k;
-    for(int i = k-1;i>=0;i--){
-    //for(int i=k+1;i<SizE;i++){
+    //for(int i = k-1;i>=0;i--){
+    for(int i=k+1;i<SizE;i++){
       if(small>arr[i]){
         pos = i;
         small = arr[i];
