@@ -45,6 +45,7 @@ int main(){
 
   //Calling Quick Sort function to sort the array.
   QuickSort(DatasetArr,0,(Size-1));
+  
   cout<<(double)(clock() - startTime)/CLOCKS_PER_SEC<<"\n\n";
 
   for(int i=0;i<Size;i++){
