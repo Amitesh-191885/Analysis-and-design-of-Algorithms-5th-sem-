@@ -23,13 +23,16 @@ int main(){
 
 void SelectionSort(int arr[],int SizE){
   int pos,temp,k,small;
-  //for(k=SizE-1;k>=0;k--){
-  for(k=0;k<SizE;k++){
+  // Both the for loop are alternate for 
+  // increasing and decreasing order sorting.
+  
+  //for(k=SizE-1;k>=0;k--){ //loop1
+  for(k=0;k<SizE;k++){ //loop2
   
     small = arr[k];
     pos = k;
-    //for(int i = k-1;i>=0;i--){
-    for(int i=k+1;i<SizE;i++){
+    //for(int i = k-1;i>=0;i--){ //for loop1
+    for(int i=k+1;i<SizE;i++){ //for loop2
       if(small>arr[i]){
         pos = i;
         small = arr[i];
